@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-900 min-h-screen relative overflow-x-hidden bg-slate-100 transition-colors duration-500;
+  }
+  
+  .dark body {
+    @apply text-slate-50 bg-slate-900;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
