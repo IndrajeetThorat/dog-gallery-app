@@ -13,7 +13,7 @@ app = FastAPI(title="Dog Gallery API")
 origins = [
     "http://localhost:5173", # Vite default
     "http://127.0.0.1:5173",
-    "*" # Allow all for development ease
+    "https://dog-gallery-app-black.vercel.app" # Allow all for development ease
 ]
 
 app.add_middleware(

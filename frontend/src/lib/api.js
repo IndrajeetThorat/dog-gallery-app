@@ -5,7 +5,7 @@ const dogApi = axios.create({
 });
 
 const backendApi = axios.create({
-    baseURL: 'https://dog-gallery-app-27wb.onrender.com',
+    baseURL: 'https://dog-gallery-app-27wb.onrender.com/',
 });
 
 export const getBreeds = async () => {
