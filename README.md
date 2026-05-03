@@ -1,5 +1,20 @@
 # Dog Gallery App
 
+
+## 🚀 Live Demo
+
+Frontend:
+https://dog-gallery-app-black.vercel.app  
+
+Backend:
+https://dog-gallery-app-27wb.onrender.com  
+
+API Docs:
+https://dog-gallery-app-27wb.onrender.com/docs  
+
+GitHub:
+https://github.com/IndrajeetThorat/dog-gallery-app
+
 A full-stack web application for browsing, liking, and sharing beautiful dog breed images.
 
 ## Features
@@ -134,4 +149,6 @@ The Vite frontend will run on `http://localhost:5173`.
 
 ## Author
 
-Antigravity
+
+Indrajeet Thorat  
+GitHub: https://github.com/IndrajeetThorat
