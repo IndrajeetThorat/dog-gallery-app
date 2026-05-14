@@ -84,7 +84,7 @@ const Home = () => {
     if (loading) return;
     if (observer.current) observer.current.disconnect();
     observer.current = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting && hasHomMore) { // fixed typo internally if any
+      if (entries[0].isIntersecting && hasMore) {
         setPage(prev => prev + 1);
       }
     });

@@ -4,16 +4,30 @@ from sqlalchemy.orm import Session
 from . import crud, models, schemas
 from .database import engine, get_db
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Dog Gallery API")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://delicate-manatee-bf8f2a.netlify.app",
+        "http://localhost:5173"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Configure CORS
 origins = [
     "http://localhost:5173", # Vite default
     "http://127.0.0.1:5173",
-    "https://dog-gallery-app-black.vercel.app" # Allow all for development ease
+    "https://dog-gallery-app-black.vercel.app", # Allow all for development ease
+    "https://6a058a15ecd8815e66a52d2a--delicate-manatee-bf8f2a.netlify.app",
+    "https://delicate-manatee-bf8f2a.netlify.app"
 ]
 
 app.add_middleware(
